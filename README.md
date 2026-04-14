@@ -21,12 +21,7 @@ Content includes infrastructure setup, automation workflows, exploit techniques,
   - Based on real community messages
 
 ### Coming Soon
-- [ ] Red Team Infrastructure Setup
-- [ ] Post-Exploitation Techniques
-- [ ] Active Directory Attack Paths
-- [ ] Web Application Exploitation
-- [ ] Mobile Security Testing
-- [ ] Cloud Penetration Testing
+- [ ] TBD
 
 ---
 
