@@ -478,8 +478,6 @@ nuclei -l targets.txt -rl 150
 
 Bug Bounty isn't just about finding vulnerabilities. It's about **optimizing your workflow** to cover more scope, faster, without burning your infrastructure.
 
-The difference between an amateur hunter and a professional isn't technical knowledge. It's the **architecture they built** to scale their operation.
-
 **Ultimate Setup Summary:**
 
 1. **Main VPS:** Contabo/Hetzner (4-8GB RAM) for 24/7 recon.
@@ -489,17 +487,13 @@ The difference between an amateur hunter and a professional isn't technical know
 5. **Bootstrap script:** To spin up new VPS in 5 minutes.
 6. **tmux/screen:** To keep processes alive.
 
-**Total cost:** $10-50 USD/month (depending on setup).
-
-**ROI:** A $500 USD bounty pays 10 months of infrastructure. One of $2000 USD pays several years and you've got leftover to reinvest.
-
 ---
 
 ## Bonus: Resources Mentioned by The Community
 
 **VPS Providers:**
-- [Digital Ocean](https://www.digitalocean.com/) (Referral: $200 USD free)
-- [Linode (Akamai)](https://www.linode.com/) (Referral: $100 USD free)
+- [Digital Ocean](https://www.digitalocean.com/)
+- [Linode (Akamai)](https://www.linode.com/)
 - [Contabo](https://contabo.com/)
 - [Hetzner](https://www.hetzner.com/)
 - [Vultr](https://www.vultr.com/)
@@ -525,13 +519,13 @@ The difference between an amateur hunter and a professional isn't technical know
 
 ## Final Words
 
-This writeup is based on **825 real messages** from the **Bug Bounty Argentina** community, extracted from years of conversations about infrastructure, automation, and tooling.
+This writeup is based on **real messages** from the **Bug Bounty Argentina** community, extracted from years of conversations about infrastructure, automation, and tooling.
 
 It's not theory. It's the raw experience of hunters who cash out and share their real workflows.
 
 If this helped you, share it. If you have a different setup, tell us in the comments.
 
-*Happy Hunting and may the $$$ bounties flow.*
+*Happy Hunting*
 
 ---
 
