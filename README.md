@@ -20,8 +20,45 @@ Content includes infrastructure setup, automation workflows, exploit techniques,
   - Axiom framework for dynamic cloud deployment
   - Based on real community messages
 
-### Coming Soon
-- [ ] TBD
+### AI/ML Security
+- [ ] LLM Security & Exploitation
+- [ ] AI Agent Security
+- [ ] Machine Learning Model Security
+
+### Cloud Native
+- [ ] Kubernetes Security
+- [ ] Container Security
+- [ ] Serverless Security
+
+### Web3 & Blockchain
+- [ ] Smart Contract Security
+- [ ] DeFi Security
+- [ ] Web3 Application Security
+
+### API Security
+- [ ] GraphQL Security
+- [ ] gRPC Security
+- [ ] WebSocket Security
+
+### Mobile Security
+- [ ] iOS Security
+- [ ] Android Security
+- [ ] Mobile API Security
+
+### Red Team
+- [ ] Infrastructure Setup
+- [ ] C2 Operations
+- [ ] Active Directory Attacks
+
+### Pentesting
+- [ ] Web Application Testing
+- [ ] Network Penetration Testing
+- [ ] Wireless Security
+
+### OSINT & Recon
+- [ ] Advanced Reconnaissance
+- [ ] Open Source Intelligence
+- [ ] Social Engineering
 
 ---
 
@@ -34,12 +71,15 @@ Content includes infrastructure setup, automation workflows, exploit techniques,
 - ✅ **Bilingual:** Most content in English and Spanish
 
 ### Topics Covered
-- **Red Team Operations:** Infrastructure, C2 setup, persistence
-- **Penetration Testing:** Methodologies, workflows, tooling
-- **Bug Bounty:** Automation, recon, exploitation techniques
-- **Exploit Development:** Binary exploitation, shellcoding
-- **Post-Exploitation:** Privilege escalation, lateral movement
-- **Cloud Security:** AWS/Azure/GCP misconfigurations
+- **Bug Bounty:** Automation, infrastructure, recon, exploitation
+- **AI/ML Security:** LLM exploitation, model security, AI agents
+- **Cloud Native:** Kubernetes, containers, serverless
+- **Web3 & Blockchain:** Smart contracts, DeFi, Web3 apps
+- **API Security:** GraphQL, gRPC, WebSocket, modern APIs
+- **Mobile Security:** iOS, Android, mobile APIs
+- **Red Team:** Infrastructure, C2, Active Directory
+- **Pentesting:** Web, network, wireless testing
+- **OSINT & Recon:** Advanced reconnaissance, social engineering
 
 ---
 
@@ -50,15 +90,21 @@ offensive-security-writeups/
 ├── README.md
 ├── bugbounty/              # Bug Bounty hunting
 │   └── infrastructure/     # VPS, VPN, tooling setup
-│       ├── VPS_VPN_BugBounty_Writeup.md
-│       └── VPS_VPN_BugBounty_Writeup_EN.md
+├── ai-security/            # AI/ML Security
+│   └── [coming soon]
+├── cloud-native/           # Cloud Native Security
+│   └── [coming soon]
+├── web3/                   # Web3 & Blockchain
+│   └── [coming soon]
+├── api-security/           # API Security
+│   └── [coming soon]
+├── mobile/                 # Mobile Security
+│   └── [coming soon]
 ├── red-team/               # Red Team operations
 │   └── [coming soon]
 ├── pentesting/             # Penetration testing
 │   └── [coming soon]
-├── exploitation/           # Exploit development
-│   └── [coming soon]
-└── resources/              # Scripts, tools, configs
+└── osint/                  # OSINT & Recon
     └── [coming soon]
 ```
 
