@@ -1,6 +1,6 @@
-# The Ultimate Setup: Offensive Architecture with VPS and VPNs for Bug Bounty
+# Offensive Architecture with VPS and VPNs for Bug Bounty
 
-> **TL;DR:** If you've ever woken up unable to access Netflix, Infobae, or your scope because a WAF blacklisted your IP for raw-dogging ffuf without protection, this article is for you. Here's the real blueprint of how top hunters from the Bug Bounty Argentina community build distributed, cheap, and lethal offensive infrastructure.
+> **TL;DR:** If you've ever woken up unable to access Netflix, Playstation, or your scope because a WAF blacklisted your IP for raw-dogging ffuf without protection, this article is for you. Here's the real blueprint of how top hunters from the Bug Bounty Argentina community build distributed, cheap, and lethal offensive infrastructure.
 
 ---
 
