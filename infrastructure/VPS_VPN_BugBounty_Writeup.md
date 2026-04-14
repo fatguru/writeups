@@ -1,4 +1,4 @@
-# El Setup Definitivo: Arquitectura Ofensiva con VPS y VPNs para Bug Bounty
+# Arquitectura Ofensiva con VPS y VPNs para Bug Bounty
 
 > **TL;DR:** Si alguna vez te levantaste sin poder entrar a Infobae, Netflix o tu *scope* porque el WAF te metió en una *blacklist* por tirar `ffuf` sin protección, este artículo es para vos. Acá está el *blueprint* real de cómo los *top hunters* de Bug Bounty Argentina montan infraestructura ofensiva distribuida, barata y letal.
 
