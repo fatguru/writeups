@@ -478,8 +478,6 @@ nuclei -l targets.txt -rl 150
 
 El Bug Bounty no es solo encontrar vulnerabilidades. Es **optimizar tu flujo de trabajo** para cubrir más *scope*, más rápido, sin quemar tu infraestructura.
 
-La diferencia entre un *hunter* amateur y uno profesional no es el conocimiento técnico. Es la **arquitectura que montó** para escalar su operación.
-
 **Resumen del Setup Definitivo:**
 
 1. **VPS principal:** Contabo/Hetzner (4-8GB RAM) para *Recon* 24/7.
@@ -489,17 +487,13 @@ La diferencia entre un *hunter* amateur y uno profesional no es el conocimiento 
 5. **Script de bootstrap:** Para levantar VPS nuevos en 5 minutos.
 6. **tmux/screen:** Para mantener procesos vivos.
 
-**Costo total:** $10-50 USD/mes (dependiendo del setup).
-
-**ROI:** Un *bounty* de $500 USD paga 10 meses de infraestructura. Uno de $2000 USD paga varios años y te sobra para reinvertir.
-
 ---
 
 ## Bonus: Recursos Mencionados por la Comunidad
 
 **Proveedores de VPS:**
-- [Digital Ocean](https://www.digitalocean.com/) (Referral: $200 USD gratis)
-- [Linode (Akamai)](https://www.linode.com/) (Referral: $100 USD gratis)
+- [Digital Ocean](https://www.digitalocean.com/)
+- [Linode (Akamai)](https://www.linode.com/)
 - [Contabo](https://contabo.com/)
 - [Hetzner](https://www.hetzner.com/)
 - [Vultr](https://www.vultr.com/)
@@ -525,13 +519,13 @@ La diferencia entre un *hunter* amateur y uno profesional no es el conocimiento 
 
 ## Palabras Finales
 
-Este *writeup* está basado en **825 mensajes reales** de la comunidad de **Bug Bounty Argentina**, extraídos de años de conversaciones sobre infraestructura, automatización y *tooling*.
+Este *writeup* está basado en **mensajes reales** de la comunidad de **Bug Bounty Argentina**, extraídos de años de conversaciones sobre infraestructura, automatización y *tooling*.
 
 No es teoría. Es la experiencia cruda de *hunters* que facturan y comparten sus *workflows* reales.
 
 Si te sirvió, compartilo. Si tenés un *setup* distinto, contalo en los comentarios.
 
-*Happy Hunting y que los $$$$ de los bounties lleguen.*
+*Happy Hunting*
 
 ---
 
