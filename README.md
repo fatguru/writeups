@@ -1,6 +1,6 @@
 # Offensive Security Writeups
 
-> Real-world writeups on Red Team operations, Penetration Testing, Bug Bounty hunting, and Offensive Security techniques.
+Real-world writeups on Red Team operations, Penetration Testing, Bug Bounty hunting, and Offensive Security techniques.
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Writeups](https://img.shields.io/badge/Writeups-1-blue.svg)](#)
