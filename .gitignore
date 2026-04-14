@@ -1,0 +1,24 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Logs
+*.log
+
+# Temporal
+*.tmp
+*.bak
+
+# Project files
+GITHUB_RECOMMENDATIONS.md
+SUMMARY.md
