@@ -12,9 +12,9 @@ Content includes infrastructure setup, automation workflows, exploit techniques,
 
 ## 📚 Table of Contents
 
-### Infrastructure & Automation
-- [**VPS & VPN Setup for Bug Bounty**](infrastructure/VPS_VPN_BugBounty_Writeup.md) 🇪🇸
-  - [English Version](infrastructure/VPS_VPN_BugBounty_Writeup_EN.md) 🇬🇧
+### Bug Bounty
+- [**VPS & VPN Setup for Bug Bounty**](bugbounty/infrastructure/VPS_VPN_BugBounty_Writeup.md) 🇪🇸
+  - [English Version](bugbounty/infrastructure/VPS_VPN_BugBounty_Writeup_EN.md) 🇬🇧
   - Distributed architecture, IP rotation, and automation
   - Cost analysis: $0 to $200/month setups
   - Axiom framework for dynamic cloud deployment
@@ -53,9 +53,10 @@ Content includes infrastructure setup, automation workflows, exploit techniques,
 ```
 offensive-security-writeups/
 ├── README.md
-├── infrastructure/          # VPS, VPN, tooling setup
-│   ├── VPS_VPN_BugBounty_Writeup.md
-│   └── VPS_VPN_BugBounty_Writeup_EN.md
+├── bugbounty/              # Bug Bounty hunting
+│   └── infrastructure/     # VPS, VPN, tooling setup
+│       ├── VPS_VPN_BugBounty_Writeup.md
+│       └── VPS_VPN_BugBounty_Writeup_EN.md
 ├── red-team/               # Red Team operations
 │   └── [coming soon]
 ├── pentesting/             # Penetration testing
@@ -139,8 +140,8 @@ Want to contribute? Check out the contribution guidelines:
 
 ## 🌟 Featured Content
 
-### Infrastructure & Automation
-**[The Ultimate VPS & VPN Setup for Bug Bounty](infrastructure/VPS_VPN_BugBounty_Writeup.md)**
+### Bug Bounty Infrastructure
+**[The Ultimate VPS & VPN Setup for Bug Bounty](bugbounty/infrastructure/VPS_VPN_BugBounty_Writeup.md)**
 
 Learn how top hunters build distributed, cost-effective infrastructure:
 - 3 setup tiers: from $0 to $200/month
