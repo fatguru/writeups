@@ -18,7 +18,7 @@ Content includes infrastructure setup, automation workflows, exploit techniques,
   - Distributed architecture, IP rotation, and automation
   - Cost analysis: $0 to $200/month setups
   - Axiom framework for dynamic cloud deployment
-  - Based on 825+ real community messages
+  - Based on real community messages
 
 ### Coming Soon
 - [ ] Red Team Infrastructure Setup
