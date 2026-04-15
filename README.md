@@ -1,5 +1,7 @@
 # Offensive Security Writeups
 
+![Offensive Security Writeups Banner](assets/header-banner.png)
+
 Real-world writeups on Red Team operations, Penetration Testing, Bug Bounty hunting, and Offensive Security techniques.
 
 Content includes infrastructure setup, automation workflows, exploit techniques, and lessons learned from actual engagements. No corporate fluff. Just technical content.
