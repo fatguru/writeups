@@ -1,5 +1,3 @@
-# Offensive Security Writeups
-
 ![Offensive Security Writeups Banner](assets/header-banner.png)
 
 Real-world writeups on Red Team operations, Penetration Testing, Bug Bounty hunting, and Offensive Security techniques.
