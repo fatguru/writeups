@@ -2,7 +2,7 @@
 
 Real-world writeups on Red Team operations, Penetration Testing, Bug Bounty hunting, and Offensive Security techniques.
 
-Content includes infrastructure setup, automation workflows, exploit techniques, and lessons learned from actual engagements. No corporate fluff. Just technical content that works.
+Content includes infrastructure setup, automation workflows, exploit techniques, and lessons learned from actual engagements. No corporate fluff. Just technical content.
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Writeups](https://img.shields.io/badge/Writeups-1-blue.svg)](#)
