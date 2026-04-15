@@ -4,7 +4,7 @@
 
 ---
 
-## Prologue: The Day I Got Banned From Half The Internet
+## Prologue: The day I got banned from half the internet
 
 A while back, a community member shared their experience:
 
@@ -20,11 +20,11 @@ The solution isn't "being more careful." The solution is **building a distribute
 
 ---
 
-## The Professional Hunter's Architecture
+## The professional hunter's architecture
 
 Top-earning hunters don't have a magic setup. They have **separation layers** between manual analysis and automated brute force.
 
-### Layer 1: Local Command Center (Your Machine)
+### Layer 1: Local command center (your machine)
 
 This is where you do the fine work:
 
@@ -35,7 +35,7 @@ This is where you do the fine work:
 
 Your local machine is your **command center**. This is where you do spidering, craft surgical payloads, analyze responses in Burp's Repeater and Intruder.
 
-### Layer 2: Cloud Execution Layer (VPS in the Cloud)
+### Layer 2: Cloud execution layer (VPS in the cloud)
 
 This is where you delegate everything heavy, noisy, and time-consuming:
 
@@ -53,11 +53,11 @@ The workflow is simple:
 
 ---
 
-## The Harsh Reality of Costs
+## The harsh reality of costs
 
 One of the biggest myths in the community is that you need a millionaire budget to do Bug Bounty. Here's the truth:
 
-### Option 1: The Minimalist Setup ($0 - $6 USD/month)
+### Option 1: The minimalist setup ($0 - $6 USD/month)
 
 **Providers:**
 - **Oracle Cloud Free Tier:** 4 vCPU + 24GB RAM (free forever). Great to start.
@@ -71,7 +71,7 @@ One of the biggest myths in the community is that you need a millionaire budget 
 **Limitation:**
 - 1GB RAM falls short if you want to do massive subdomain permutations or run `amass` in brute force mode.
 
-### Option 2: The Intermediate Setup ($6 - $12 USD/month)
+### Option 2: The intermediate setup ($6 - $12 USD/month)
 
 **Providers:**
 - **Contabo:** 4GB RAM, 4 vCore, 200GB SSD for $6.99 USD/month.
@@ -86,7 +86,7 @@ One of the biggest myths in the community is that you need a millionaire budget 
 **Community comment:**
 > *"OVH has cheap VPS, idk why everyone goes to DigitalOcean which is more expensive. Hetzner is super solid too."*
 
-### Option 3: The Distributed Farm (Advanced Users)
+### Option 3: The distributed farm (advanced users)
 
 Here we enter hardcore territory. An advanced strategy is renting multiple cheap servers to distribute scanning and avoid bans.
 
@@ -117,11 +117,11 @@ pssh -h hosts.txt -i "subfinder -d target.com -silent"
 
 ---
 
-## VPNs: Not Paranoia, It's Ammunition
+## VPNs: Not paranoia, it's ammunition
 
 A VPN isn't for "hiding from the NSA." It's for **rotating IPs** when you get blocked and keep moving forward.
 
-### The VPN Workflow
+### The VPN workflow
 
 1. Install an OpenVPN client on your VPS or local machine.
 2. Contract a provider that allows **multiple simultaneous connections**:
@@ -145,7 +145,7 @@ done
 
 Each worker exits with a different IP. If one gets banned, the other 9 keep operating.
 
-### The Squid Proxy Trick
+### The Squid Proxy trick
 
 An advanced community configuration:
 
@@ -157,7 +157,7 @@ An advanced community configuration:
 
 ---
 
-## X11 Forwarding Magic: Remote GUI Without VNC
+## X11 Forwarding magic: Remote GUI without VNC
 
 One of the most common pain points is: *"How do I run Burp Suite on a VPS if it has no GUI?"*
 
@@ -184,7 +184,7 @@ java -jar burpsuite_pro.jar
 
 The Burp window opens on your screen, but **HTTP requests exit from the VPS IP**.
 
-### Modern Alternative: Xpra
+### Modern alternative: Xpra
 
 If X11 latency is high, you can use **Xpra**, which is like "screen for GUI applications":
 
@@ -198,7 +198,7 @@ xpra attach ssh:root@vps_ip:100
 
 ---
 
-## VPS Providers: Tier List for Bug Bounty (Updated 2026)
+## VPS providers: Tier list for Bug Bounty (updated 2026)
 
 Not all providers are equal. Some will close your account at the first Abuse complaint. Here's the community's experience:
 
@@ -212,7 +212,7 @@ Not all providers are equal. Some will close your account at the first Abuse com
 | **Oracle Cloud Free** | $0 (24GB/4vCore) | Variable | Restrictive | Testing and learning |
 | **AWS Lightsail** | $3.50 (512MB/1CPU) | 1 TB included | Moderate | Microservices and automation |
 
-### Community Comments
+### Community comments
 
 > *"Some providers accept crypto for payment, which is useful if you want more anonymity in your tests."*
 
@@ -224,7 +224,7 @@ Not all providers are equal. Some will close your account at the first Abuse com
 
 ---
 
-## Axiom: Distributed Cloud Automation
+## Axiom: Distributed cloud automation
 
 **Axiom** is a dynamic automation framework that allows you to create, manage, and destroy VPS fleets on demand specifically for recon and bug bounty.
 
@@ -236,14 +236,14 @@ Developed by **@pry0cc**, Axiom allows you to:
 - Scale horizontally: need more power, create more instances.
 - Destroy everything when done to minimize costs.
 
-### Axiom Advantages
+### Axiom advantages
 
 1. **Cost-effective:** Only pay for the time you use the VPS.
 2. **Scalable:** Can go from 1 to 50 instances in minutes.
 3. **Modular:** Pre-built integrations with popular tools.
 4. **IP Rotation:** Each instance has its own public IP.
 
-### Basic Installation
+### Basic installation
 
 ```bash
 # Clone Axiom
@@ -257,7 +257,7 @@ cd axiom
 # You need your provider's API token
 ```
 
-### Typical Workflow with Axiom
+### Typical workflow with Axiom
 
 ```bash
 # 1. Create a fleet of 10 instances
@@ -273,7 +273,7 @@ axiom-scan subdomains.txt -m httpx -o active-hosts.txt
 axiom-rm my-recon-fleet -f
 ```
 
-### Real Use Cases
+### Real use cases
 
 **Scenario 1: Massive Recon in Live Hacking Event**
 ```bash
@@ -296,7 +296,7 @@ axiom-scan endpoints.txt -m ffuf -w /path/to/wordlist.txt -T my-fleet
 axiom-scan active-hosts.txt -m gowitness -T fleet
 ```
 
-### Popular Axiom Modules
+### Popular Axiom modules
 
 | Module | Tool | Use |
 |--------|------|-----|
@@ -307,7 +307,7 @@ axiom-scan active-hosts.txt -m gowitness -T fleet
 | `gowitness` | GoWitness | Web application screenshots |
 | `amass` | OWASP Amass | Passive/active recon |
 
-### Best Practices with Axiom
+### Best practices with Axiom
 
 1. **Use Snapshots:** Create a snapshot with all your tools installed for quick deploy.
 2. **Cost Monitoring:** Destroy fleets when not in use.
@@ -318,11 +318,11 @@ axiom-scan active-hosts.txt -m gowitness -T fleet
 
 ---
 
-## Automation Scripts: Bootstrap in 5 Minutes
+## Automation scripts: Bootstrap in 5 minutes
 
 When you spin up a new VPS, you can't waste 30 minutes installing tools manually. You need a **bootstrap script**.
 
-### Base Script (Debian/Ubuntu)
+### Base script (Debian/Ubuntu)
 
 ```bash
 #!/bin/bash
@@ -380,9 +380,9 @@ In 5 minutes you have a VPS ready for recon.
 
 ---
 
-## Real Use Cases: How The Community Uses It
+## Real use cases: How the community uses it
 
-### Case 1: Solo Hunter with 1 VPS
+### Case 1: Solo hunter with 1 VPS
 
 **Setup:**
 - 1 Contabo VPS ($6.99 USD/month, 4GB RAM).
@@ -396,7 +396,7 @@ In 5 minutes you have a VPS ready for recon.
 
 **Total cost:** ~$10 USD/month.
 
-### Case 2: Hunter with Distributed Architecture
+### Case 2: Hunter with distributed architecture
 
 **Setup:**
 - 1 main VPS on Hetzner (4GB RAM) for orchestration.
@@ -411,7 +411,7 @@ In 5 minutes you have a VPS ready for recon.
 
 **Total cost:** $5 USD/month (fixed VPS) + variable Axiom costs (only when used).
 
-### Case 3: Advanced Setup with Permanent Farm
+### Case 3: Advanced setup with permanent farm
 
 **Setup:**
 - 10 cheap VPS on Hetzner/Racknerd ($3-5 USD each).
@@ -430,15 +430,15 @@ In 5 minutes you have a VPS ready for recon.
 
 ---
 
-## Common Mistakes and How to Avoid Them
+## Common mistakes and how to avoid them
 
-### Mistake 1: Running Amass Without VPS
+### Mistake 1: Running Amass without VPS
 
 > *"If you don't run Amass on a VPS, it'll kill your connection on your local PC. It's one of the best tools for finding subdomains."*
 
 **Solution:** Always run heavy tools on VPS.
 
-### Mistake 2: Forgetting to Activate VPN
+### Mistake 2: Forgetting to activate VPN
 
 > *"Got banned by Akamai, now I can't access several important sites. Now using VPN until my IP changes."*
 
@@ -461,7 +461,7 @@ function safe_ffuf() {
 
 **Solution:** Always use Debian on low-resource VPS.
 
-### Mistake 4: Not Limiting Request Rate
+### Mistake 4: Not limiting request rate
 
 > *"Waited weeks with my home IP blocked... not even the PlayStation worked. Since then, never again did I throw scans from anywhere other than a VPS."*
 
@@ -474,11 +474,11 @@ nuclei -l targets.txt -rl 150
 
 ---
 
-## Conclusion: Infrastructure Is Your Competitive Edge
+## Conclusion: Infrastructure is your competitive edge
 
 Bug Bounty isn't just about finding vulnerabilities. It's about **optimizing your workflow** to cover more scope, faster, without burning your infrastructure.
 
-**Ultimate Setup Summary:**
+**Ultimate setup summary:**
 
 1. **Main VPS:** Contabo/Hetzner (4-8GB RAM) for 24/7 recon.
 2. **Commercial VPN:** NordVPN/Surfshark for IP rotation.
@@ -489,7 +489,7 @@ Bug Bounty isn't just about finding vulnerabilities. It's about **optimizing you
 
 ---
 
-## Bonus: Resources Mentioned by The Community
+## Bonus: Resources mentioned by the community
 
 **VPS Providers:**
 - [Digital Ocean](https://www.digitalocean.com/)
@@ -512,12 +512,12 @@ Bug Bounty isn't just about finding vulnerabilities. It's about **optimizing you
 - [Osmedeus](https://github.com/j3ssie/osmedeus) - Automated Recon & Scanning
 - [VPS Docker for Pentest](https://github.com/aaaguirrep/vps-docker-for-pentest)
 
-**Provisioning Scripts:**
+**Provisioning scripts:**
 - [Terraform + Ansible for VPS](https://github.com/aaaguirrep/vps-docker-for-pentest)
 
 ---
 
-## Final Words
+## Final words
 
 This writeup is based on **real messages** from the **Bug Bounty Argentina** community, extracted from years of conversations about infrastructure, automation, and tooling.
 

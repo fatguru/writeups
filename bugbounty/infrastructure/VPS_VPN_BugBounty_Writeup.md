@@ -4,7 +4,7 @@
 
 ---
 
-## Prólogo: El Día Que Me Bloquearon de Medio Internet
+## Prólogo: El día que me bloquearon de medio internet
 
 Hace un tiempo, un miembro de la comunidad compartió su experiencia:
 
@@ -20,11 +20,11 @@ La solución no es "ser más cuidadoso". La solución es **construir una arquite
 
 ---
 
-## La Arquitectura del Hunter Profesional
+## La arquitectura del hunter profesional
 
 Los *hunters* que más facturan no tienen un *setup* mágico. Tienen **capas de separación** entre el análisis manual y la fuerza bruta automatizada.
 
-### Capa 1: El Comando Local (Tu Máquina)
+### Capa 1: El comando local (tu máquina)
 
 Acá es donde hacés el trabajo fino:
 
@@ -35,7 +35,7 @@ Acá es donde hacés el trabajo fino:
 
 Tu máquina local es tu **centro de operaciones**. Acá hacés *spidering*, armás *payloads* quirúrgicos, analizás respuestas en el *Repeater* y *Intruder* de Burp.
 
-### Capa 2: La Nube de Ejecución (VPS en la Nube)
+### Capa 2: La nube de ejecución (VPS en la nube)
 
 Acá es donde delegás todo lo pesado, ruidoso y que requiere tiempo:
 
@@ -53,11 +53,11 @@ El *workflow* es simple:
 
 ---
 
-## La Cruda Realidad de los Costos
+## La cruda realidad de los costos
 
 Uno de los mitos más grandes en la comunidad es que necesitás un presupuesto millonario para hacer Bug Bounty. Acá va la verdad:
 
-### Opción 1: El Setup Minimalista ($0 - $6 USD/mes)
+### Opción 1: El setup minimalista ($0 - $6 USD/mes)
 
 **Proveedores:**
 - **Oracle Cloud Free Tier:** 4 vCPU + 24GB RAM (gratis forever). Ideal para empezar.
@@ -71,7 +71,7 @@ Uno de los mitos más grandes en la comunidad es que necesitás un presupuesto m
 **Limitación:**
 - 1GB de RAM se te queda corto si querés hacer *permutaciones* masivas de subdominios o correr `amass` en modo *brute force*.
 
-### Opción 2: El Setup Intermedio ($6 - $12 USD/mes)
+### Opción 2: El setup intermedio ($6 - $12 USD/mes)
 
 **Proveedores:**
 - **Contabo:** 4GB RAM, 4 vCore, 200GB SSD por $6.99 USD/mes.
@@ -86,7 +86,7 @@ Uno de los mitos más grandes en la comunidad es que necesitás un presupuesto m
 **Comentario de la comunidad:**
 > *"OVH tiene VPS baratos, no sé por qué todos se van a DigitalOcean que es más caro. Hetzner está súper bien también."*
 
-### Opción 3: La Granja Distribuida (Usuarios Avanzados)
+### Opción 3: La granja distribuida (usuarios avanzados)
 
 Acá entramos en territorio *hardcore*. Una estrategia avanzada es alquilar múltiples servidores baratos para distribuir el escaneo y evitar baneos.
 
@@ -117,11 +117,11 @@ pssh -h hosts.txt -i "subfinder -d target.com -silent"
 
 ---
 
-## VPNs: No Es Paranoia, Es Munición
+## VPNs: No es paranoia, es munición
 
 Una VPN no es para "ocultarte de la NSA". Es para **rotar IPs** cuando te bloquean y seguir avanzando.
 
-### El Workflow con VPN
+### El workflow con VPN
 
 1. Instalás un cliente OpenVPN en tu VPS o máquina local.
 2. Contratás un proveedor que permita **múltiples conexiones simultáneas**:
@@ -145,7 +145,7 @@ done
 
 Cada *worker* sale con una IP diferente. Si uno se banea, los otros 9 siguen operativos.
 
-### El Truco con Squid Proxy
+### El truco con Squid Proxy
 
 Una configuración avanzada de la comunidad:
 
@@ -157,7 +157,7 @@ Una configuración avanzada de la comunidad:
 
 ---
 
-## La Magia de X11 Forwarding: GUI Remota Sin VNC
+## La magia de X11 Forwarding: GUI remota sin VNC
 
 Uno de los *pain points* más comunes es: *"¿Cómo corro Burp Suite en un VPS si no tiene interfaz gráfica?"*
 
@@ -184,7 +184,7 @@ java -jar burpsuite_pro.jar
 
 La ventana de Burp se abre en tu pantalla, pero **las peticiones HTTP salen desde la IP del VPS**.
 
-### Alternativa Moderna: Xpra
+### Alternativa moderna: Xpra
 
 Si la latencia de X11 es alta, podés usar **Xpra**, que es como "screen para aplicaciones gráficas":
 
@@ -198,7 +198,7 @@ xpra attach ssh:root@ip_del_vps:100
 
 ---
 
-## Proveedores de VPS: Tier List para Bug Bounty (Actualizado 2026)
+## Proveedores de VPS: Tier list para Bug Bounty (actualizado 2026)
 
 No todos los proveedores son iguales. Algunos te cierran la cuenta a la primera queja de *Abuse*. Acá la experiencia de la comunidad:
 
@@ -212,7 +212,7 @@ No todos los proveedores son iguales. Algunos te cierran la cuenta a la primera 
 | **Oracle Cloud Free** | $0 (24GB/4vCore) | Variable | Restrictivo | Testing y aprendizaje |
 | **AWS Lightsail** | $3.50 (512MB/1CPU) | 1 TB incluido | Moderado | Microservicios y automatización |
 
-### Comentarios de la Comunidad
+### Comentarios de la comunidad
 
 > *"Algunos proveedores aceptan crypto para pago, lo cual es útil si querés más anonimato en tus pruebas."*
 
@@ -224,7 +224,7 @@ No todos los proveedores son iguales. Algunos te cierran la cuenta a la primera 
 
 ---
 
-## Axiom: Automatización Distribuida en la Nube
+## Axiom: Automatización distribuida en la nube
 
 **Axiom** es un framework de automatización dinámica que permite crear, gestionar y destruir flotas de VPS bajo demanda específicamente para *Recon* y *Bug Bounty*.
 
@@ -243,7 +243,7 @@ Desarrollado por **@pry0cc**, Axiom te permite:
 3. **Modular:** Integraciones pre-construidas con herramientas populares.
 4. **Rotación de IPs:** Cada instancia tiene su propia IP pública.
 
-### Instalación Básica
+### Instalación básica
 
 ```bash
 # Clonar Axiom
@@ -257,7 +257,7 @@ cd axiom
 # Necesitás tu API token del proveedor
 ```
 
-### Workflow Típico con Axiom
+### Workflow típico con Axiom
 
 ```bash
 # 1. Crear una flota de 10 instancias
@@ -273,7 +273,7 @@ axiom-scan subdomains.txt -m httpx -o active-hosts.txt
 axiom-rm my-recon-fleet -f
 ```
 
-### Casos de Uso Reales
+### Casos de uso reales
 
 **Scenario 1: Recon Masivo en Live Hacking Event**
 ```bash
@@ -296,7 +296,7 @@ axiom-scan endpoints.txt -m ffuf -w /path/to/wordlist.txt -T my-fleet
 axiom-scan active-hosts.txt -m gowitness -T fleet
 ```
 
-### Módulos Populares de Axiom
+### Módulos populares de Axiom
 
 | Módulo | Herramienta | Uso |
 |--------|-------------|-----|
@@ -318,11 +318,11 @@ axiom-scan active-hosts.txt -m gowitness -T fleet
 
 ---
 
-## Scripts de Automatización: El Bootstrap en 5 Minutos
+## Scripts de automatización: El bootstrap en 5 minutos
 
 Cuando levantás un VPS nuevo, no podés perder 30 minutos instalando herramientas a mano. Necesitás un **script de bootstrap**.
 
-### Script Base (Debian/Ubuntu)
+### Script base (Debian/Ubuntu)
 
 ```bash
 #!/bin/bash
@@ -380,9 +380,9 @@ En 5 minutos tenés un VPS listo para *Recon*.
 
 ---
 
-## Casos de Uso Reales: Cómo Lo Usa la Comunidad
+## Casos de uso reales: Cómo lo usa la comunidad
 
-### Caso 1: El Hunter Solo con 1 VPS
+### Caso 1: El hunter solo con 1 VPS
 
 **Setup:**
 - 1 VPS de Contabo ($6.99 USD/mes, 4GB RAM).
@@ -396,7 +396,7 @@ En 5 minutos tenés un VPS listo para *Recon*.
 
 **Costo total:** ~$10 USD/mes.
 
-### Caso 2: El Hunter con Arquitectura Distribuida
+### Caso 2: El hunter con arquitectura distribuida
 
 **Setup:**
 - 1 VPS principal en Hetzner (4GB RAM) para orquestar.
@@ -411,7 +411,7 @@ En 5 minutos tenés un VPS listo para *Recon*.
 
 **Costo total:** $5 USD/mes (VPS fijo) + costos variables de Axiom (solo cuando se usa).
 
-### Caso 3: El Setup Avanzado con Granja Permanente
+### Caso 3: El setup avanzado con granja permanente
 
 **Setup:**
 - 10 VPS baratos en Hetzner/Racknerd ($3-5 USD cada uno).
@@ -430,15 +430,15 @@ En 5 minutos tenés un VPS listo para *Recon*.
 
 ---
 
-## Errores Comunes y Cómo Evitarlos
+## Errores comunes y cómo evitarlos
 
-### Error 1: Tirar Amass Sin VPS
+### Error 1: Tirar Amass sin VPS
 
 > *"Si no corrés Amass en un VPS, en tu PC local te mata la conexión. Es de las mejores herramientas para encontrar subdominios."*
 
 **Solución:** Siempre correr herramientas pesadas en VPS.
 
-### Error 2: Olvidarse de Activar la VPN
+### Error 2: Olvidarse de activar la VPN
 
 > *"Me banearon de Akamai, ahora no puedo entrar ni a varios sitios importantes. Ahora a usar VPN hasta que me cambie la IP."*
 
@@ -461,7 +461,7 @@ function safe_ffuf() {
 
 **Solución:** Siempre usar Debian en VPS de bajos recursos.
 
-### Error 4: No Limitar el *Rate* de Requests
+### Error 4: No limitar el *rate* de requests
 
 > *"Una vez esperé semanas con la IP de mi casa bloqueada... ni la PlayStation funcionaba. Desde entonces, nunca más tiré escaneos desde otro lado que no fuera un VPS."*
 
@@ -474,11 +474,11 @@ nuclei -l targets.txt -rl 150
 
 ---
 
-## Conclusión: La Infraestructura Es Tu Ventaja Competitiva
+## Conclusión: La infraestructura es tu ventaja competitiva
 
 El Bug Bounty no es solo encontrar vulnerabilidades. Es **optimizar tu flujo de trabajo** para cubrir más *scope*, más rápido, sin quemar tu infraestructura.
 
-**Resumen del Setup Definitivo:**
+**Resumen del setup definitivo:**
 
 1. **VPS principal:** Contabo/Hetzner (4-8GB RAM) para *Recon* 24/7.
 2. **VPN comercial:** NordVPN/Surfshark para rotación de IPs.
@@ -489,7 +489,7 @@ El Bug Bounty no es solo encontrar vulnerabilidades. Es **optimizar tu flujo de 
 
 ---
 
-## Bonus: Recursos Mencionados por la Comunidad
+## Bonus: Recursos mencionados por la comunidad
 
 **Proveedores de VPS:**
 - [Digital Ocean](https://www.digitalocean.com/)
@@ -499,7 +499,7 @@ El Bug Bounty no es solo encontrar vulnerabilidades. Es **optimizar tu flujo de 
 - [Vultr](https://www.vultr.com/)
 - [Oracle Cloud](https://www.oracle.com/cloud/free/) (Free tier permanente)
 
-**VPNs Recomendadas:**
+**VPNs recomendadas:**
 - [Mullvad VPN](https://mullvad.net/) (Enfoque en privacidad)
 - [NordVPN](https://nordvpn.com/) (Unlimited devices)
 - [Surfshark](https://surfshark.com/) (Unlimited devices)
@@ -512,12 +512,12 @@ El Bug Bounty no es solo encontrar vulnerabilidades. Es **optimizar tu flujo de 
 - [Osmedeus](https://github.com/j3ssie/osmedeus) - Automated Recon & Scanning
 - [VPS Docker for Pentest](https://github.com/aaaguirrep/vps-docker-for-pentest)
 
-**Scripts de Provisioning:**
+**Scripts de provisioning:**
 - [Terraform + Ansible para VPS](https://github.com/aaaguirrep/vps-docker-for-pentest)
 
 ---
 
-## Palabras Finales
+## Palabras finales
 
 Este *writeup* está basado en **mensajes reales** de la comunidad de **Bug Bounty Argentina**, extraídos de años de conversaciones sobre infraestructura, automatización y *tooling*.
 
