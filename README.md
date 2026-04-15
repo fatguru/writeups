@@ -132,16 +132,16 @@ See [LICENSE](LICENSE) for details.
 
 **Want to contribute?** Submit a [Pull Request](../../pulls)
 
-**Questions?** Join the [Bug Bounty Argentina](https://t.me/bugbountyargentina) community
+Join the [Bug Bounty Argentina](https://x.com/BugBountyArg) community
 
 ---
 
 ## 🙏 Acknowledgments
 
 This content is possible thanks to:
+- **All fellow Hackers and individual Hunters:** Who share their workflows and lessons learned
 - **Bug Bounty Argentina Community:** For sharing real-world experiences
 - **Open Source Tooling:** ProjectDiscovery, Tomnomnom, PortSwigger, and the entire infosec community
-- **Individual Hunters:** Who share their workflows and lessons learned
 
 ---
 
