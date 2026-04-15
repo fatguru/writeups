@@ -9,6 +9,26 @@ Real-world writeups on Red Team operations, Penetration Testing, Bug Bounty hunt
 Content includes infrastructure setup, automation workflows, exploit techniques, and lessons learned from actual engagements. No corporate fluff. Just technical content that works.
 
 ---
+## 🎯 What You'll Find Here
+
+### Content Standards
+- ✅ **Technical and Practical:** Zero fluff, pure actionable content
+- ✅ **Real-World Experience:** From actual engagements and research
+- ✅ **Code-Heavy:** Copy-paste ready commands and scripts
+- ✅ **Bilingual:** Most content in English and Spanish
+
+### Topics Covered (but not limited to)
+- **Bug Bounty:** Automation, infrastructure, recon, exploitation, strategy, etc.
+- **AI/ML Security:** LLM exploitation, model security, AI agents
+- **Cloud Native:** Kubernetes, containers, serverless
+- **Web3 & Blockchain:** Smart contracts, DeFi, Web3 apps
+- **API Security:** GraphQL, gRPC, WebSocket, modern APIs
+- **Mobile Security:** iOS, Android, mobile APIs
+- **Red Team:** Infrastructure, C2, Active Directory
+- **Pentesting:** Web, network, wireless testing
+- **OSINT & Recon:** Advanced reconnaissance, social engineering
+- **Hardware Hacking & Binary Security:** reversing, etc.
+---
 
 ## 📚 Table of Contents
 
@@ -59,27 +79,6 @@ Content includes infrastructure setup, automation workflows, exploit techniques,
 - [ ] Advanced Reconnaissance
 - [ ] Open Source Intelligence
 - [ ] Social Engineering
-
----
-
-## 🎯 What You'll Find Here
-
-### Content Standards
-- ✅ **Technical and Practical:** Zero fluff, pure actionable content
-- ✅ **Real-World Experience:** From actual engagements and research
-- ✅ **Code-Heavy:** Copy-paste ready commands and scripts
-- ✅ **Bilingual:** Most content in English and Spanish
-
-### Topics Covered
-- **Bug Bounty:** Automation, infrastructure, recon, exploitation
-- **AI/ML Security:** LLM exploitation, model security, AI agents
-- **Cloud Native:** Kubernetes, containers, serverless
-- **Web3 & Blockchain:** Smart contracts, DeFi, Web3 apps
-- **API Security:** GraphQL, gRPC, WebSocket, modern APIs
-- **Mobile Security:** iOS, Android, mobile APIs
-- **Red Team:** Infrastructure, C2, Active Directory
-- **Pentesting:** Web, network, wireless testing
-- **OSINT & Recon:** Advanced reconnaissance, social engineering
 
 ---
 
